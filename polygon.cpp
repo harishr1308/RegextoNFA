@@ -5,15 +5,13 @@
 #include <cmath>
 #include <GL/glut.h>
 #include "adiprog.cpp"
+#define RADPERDEG 0.0174533
 using namespace std;
-
- #define RADPERDEG 0.0174533
 
 int sides=10; //number of sides
 const double pi = 3.14;
 static int k=0;
 string inre="a*";
-
 vector<vector<double> > xycoordinates;
 //vector<vector<int> >transitions;
 double r = 350;
@@ -128,10 +126,8 @@ void Bresenham(int xC,int yC, int radius)
 void BresenhamKrug(int xCenter, int yCenter,int r){ //napravite parametarski poziv
     int x=0,y=r;
     int d=3-(2*r);
-
-  
+	
     glBegin(GL_POLYGON);
-
     while(x<=y)
     {
         glVertex2i(xCenter+x,yCenter+y);  glVertex2i(xCenter+y,yCenter+x);
@@ -141,12 +137,12 @@ void BresenhamKrug(int xCenter, int yCenter,int r){ //napravite parametarski poz
 
         if (d<0)
             d += (4*x)+6;
-        else{
+        else
+	{
               d += (4*(x-y))+10;
               y--;
         }
-
-        x++;
+	x++;
     }
     glEnd();
     glFlush();
