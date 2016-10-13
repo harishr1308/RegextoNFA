@@ -12,18 +12,18 @@ using namespace std;
 int sides=10; //number of sides
 const double pi = 3.14;
 static int k=0;
-string inre="a*";
+string inre="(a*+b*)";
 
 vector<vector<double> > xycoordinates;
 //vector<vector<int> >transitions;
 double r = 350;
 
-void Init()
+/*void Init()
 {
 	glClearColor(1.0,1.0,1.0,0);
 	glClear(GL_COLOR_BUFFER_BIT);
 	glColor3f(0,0,0);
-}
+}*/
 
 void testing()
 {
@@ -438,6 +438,8 @@ void keyboard(unsigned char key, int x, int y)
 
 int main(int argc, char** argv)
 {
+cout<<"Enter the string: ";
+  cin>>inre;
  glutInit(&argc,argv);
  glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);
  glutInitWindowPosition(0,0);
