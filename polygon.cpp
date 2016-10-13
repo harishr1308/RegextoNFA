@@ -18,12 +18,12 @@ vector<vector<double> > xycoordinates;
 //vector<vector<int> >transitions;
 double r = 350;
 
-void Init()
+/*void Init()
 {
 	glClearColor(1.0,1.0,1.0,0);
 	glClear(GL_COLOR_BUFFER_BIT);
 	glColor3f(0,0,0);
-}
+}*/
 
 void testing()
 {
