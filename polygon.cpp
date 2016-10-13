@@ -12,7 +12,7 @@ using namespace std;
 int sides=10; //number of sides
 const double pi = 3.14;
 static int k=0;
-string inre="(a*+b*)";
+string inre;
 
 vector<vector<double> > xycoordinates;
 //vector<vector<int> >transitions;
