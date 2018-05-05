@@ -33,4 +33,4 @@ a.b
 ```
 
 
-[![N|Solid](Images/regex_ab.png)]
+![N|Solid](Images/regex_ab.png)
